@@ -54,7 +54,7 @@ body {
   top: 130px;
 }
 .mouse {
-  position: absolute;
+  position: fixed;
   top: var(--mouse-moveY);
   left: var(--mouse-moveX);
   height: 20px;

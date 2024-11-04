@@ -44,8 +44,8 @@ const scrollHeight = () => {
 };
 
 const mousePrint = (event) => {
-  rootStyles.setProperty('--mouse-moveY', `${event.pageY}px`);
-  rootStyles.setProperty('--mouse-moveX', `${event.pageX}px`);
+  rootStyles.setProperty('--mouse-moveY', `${event.clientY}px`);
+  rootStyles.setProperty('--mouse-moveX', `${event.clientX}px`);
 
   console.log(event);
 };

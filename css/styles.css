@@ -1,3 +1,10 @@
+:root {
+  --bg-color: #000000;
+  --var-scroll: 30px;
+  --mouse-moveY: 0;
+  --mouse-moveX: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,4 +30,34 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: aliceblue;
+  background-color: var(--bg-color);
+  min-height: 500vh;
+}
+.scroll {
+  position: fixed;
+  height: 50px;
+  width: var(--var-scroll);
+  background-color: aqua;
+}
+
+.title {
+  position: fixed;
+  top: 50px;
+}
+.button1 {
+  position: fixed;
+  top: 130px;
+  left: 220px;
+}
+.button {
+  position: fixed;
+  top: 130px;
+}
+.mouse {
+  position: absolute;
+  top: var(--mouse-moveY);
+  left: var(--mouse-moveX);
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 94, 0);
 }
